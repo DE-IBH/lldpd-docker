@@ -1,0 +1,11 @@
+# example docker-compose file
+version: '3'
+services:
+  lldpd:
+    image: liske/lldpd
+    cap_add:
+      - NET_ADMIN
+      - NET_RAW
+    network_mode: host
+    hostname: myhostname
+    read_only: true
