@@ -8,4 +8,5 @@ services:
       - NET_RAW
     network_mode: host
     hostname: myhostname
-    read_only: true
+    # hide kernel details and enable CDP
+    command: ["-k", "-c"]
