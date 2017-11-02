@@ -8,5 +8,5 @@ services:
       - NET_RAW
     network_mode: host
     hostname: myhostname
-    # hide kernel details and enable CDP
+    # LLDPD options: hide kernel details and enable CDP
     command: ["-k", "-c"]
