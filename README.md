@@ -28,3 +28,18 @@ $ docker run --rm --net=host --uts=host --cap-add=NET_ADMIN --cap-add=NET_RAW li
 The command is used as options for lldpd (which is already the entrypoint). By default the option `-k` is used.
 Feel free to change the behavior by passing [lldpd options](https://vincentbernat.github.io/lldpd/usage.html#lldpd8)
 as command.
+
+```
+# docker-compose.yml example
+version: '3'
+services:
+  lldpd:
+    image: liske/lldpd
+    cap_add:
+      - NET_ADMIN
+      - NET_RAW
+    network_mode: host
+    hostname: myhostname
+    # LLDPD options: hide kernel details and enable CDP
+    command: ["-k", "-c"]
+```
