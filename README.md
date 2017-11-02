@@ -10,7 +10,7 @@ Images are tagged according to the installed lldpd version. All images are build
 * [`0.9.6`, `latest` Dockerfile](https://github.com/liske/lldpd-docker/blob/master/lldpd-0.9.6-debian/Dockerfile)
 
   [![Layers](https://images.microbadger.com/badges/image/liske/lldpd:0.9.6.svg)](https://images.microbadger.com/badges/image/liske/lldpd:0.9.6)
-  This image is build using *Debian strech* and should be considered **stable** (*recommended*).
+  This image is build using *Debian stretch* and should be considered **stable** (*recommended*).
 
 
 * [`0.7.11` Dockerfile](https://github.com/liske/lldpd-docker/blob/master/lldpd-0.7.11-debian/Dockerfile)
