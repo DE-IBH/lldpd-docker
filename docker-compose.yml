@@ -2,7 +2,7 @@
 version: '3'
 services:
   lldpd:
-    image: liske/lldpd
+    image: ibhde/lldpd
     cap_add:
       - NET_ADMIN
       - NET_RAW
