@@ -7,22 +7,22 @@ This is a docker image for [lldpd](https://vincentbernat.github.io/lldpd/) based
 
 Images are tagged according to the installed lldpd version. All images are build using different Debain GNU/Linux releases.
 
-* [`0.9.6`, `latest` Dockerfile](https://github.com/liske/lldpd-docker/blob/master/lldpd-0.9.6-debian/Dockerfile)
+* [`0.9.6`, `latest` Dockerfile](https://github.com/DE-IBH/lldpd-docker/blob/master/lldpd-0.9.6-debian/Dockerfile)
 
-  [![Layers](https://images.microbadger.com/badges/image/liske/lldpd:0.9.6.svg)](https://images.microbadger.com/badges/image/liske/lldpd:0.9.6)
+  [![Layers](https://images.microbadger.com/badges/image/ibhde/lldpd:0.9.6.svg)](https://images.microbadger.com/badges/image/ibhde/lldpd:0.9.6)
   This image is build using *Debian stretch* and should be considered **stable** (*recommended*).
 
 
-* [`0.7.11` Dockerfile](https://github.com/liske/lldpd-docker/blob/master/lldpd-0.7.11-debian/Dockerfile)
+* [`0.7.11` Dockerfile](https://github.com/DE-IBH/lldpd-docker/blob/master/lldpd-0.7.11-debian/Dockerfile)
 
-  [![Layers](https://images.microbadger.com/badges/image/liske/lldpd:0.7.11.svg)](https://images.microbadger.com/badges/image/liske/lldpd:0.7.11)
+  [![Layers](https://images.microbadger.com/badges/image/ibhde/lldpd:0.7.11.svg)](https://images.microbadger.com/badges/image/ibhde/lldpd:0.7.11)
   This image is build using *Debian jessie* and should be considered **obsolete**.
 
 
 ## Usage
 
 ```
-$ docker run --rm --net=host --uts=host --cap-add=NET_ADMIN --cap-add=NET_RAW liske/lldpd
+$ docker run --rm --net=host --uts=host --cap-add=NET_ADMIN --cap-add=NET_RAW ibhde/lldpd
 ```
 
 The command is used as options for lldpd (which is already the entrypoint). By default the option `-k` is used.
@@ -34,7 +34,7 @@ as command.
 version: '3'
 services:
   lldpd:
-    image: liske/lldpd
+    image: ibhde/lldpd
     cap_add:
       - NET_ADMIN
       - NET_RAW
